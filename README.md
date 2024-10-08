@@ -18,12 +18,11 @@
 ```
 ## 2.快速使用
 ### 1. 本地安装git 克隆本项目
-   * 进入目录 执行 
+   * 进入目录 执行  启动运行环境 nginx+php 容器
    ```
-   git clone   xxxxxxx
    docker-compose up -d  
    ```
-#### 2. 在浏览器中访问：`http://localhost`就能看到效果，PHP代码在文件`./www/ayth/*`。
+#### 2. 在浏览器中访问：`http://localhost`就能看到效果，PHP代码在文件`./www/auth/*`。
 
 ## 3.实现流程
 * 访问http://localhost，默认 laravel 项目首页 （忽略）
