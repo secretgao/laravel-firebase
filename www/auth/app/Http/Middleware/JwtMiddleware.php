@@ -22,11 +22,11 @@ class JwtMiddleware
            return redirect()->route('login');
         }
 
+        //通过token 解析出来 用户信息
         $decoded = $this->jwtService->verifyJWT($token);
         if (!$decoded) {
             return response()->json(['error' => 'Invalid token'], 401);
         }
-
         $request->user = $decoded;
 
         return $next($request);

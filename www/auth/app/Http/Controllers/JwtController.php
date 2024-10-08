@@ -37,20 +37,16 @@ class JwtController extends Controller
                 'status'=>200,
                 'redirect_url'=>route('home')
             ],200);
-
         } else {
             return response()->json(['message' => 'Invalid credentials','status'=>401], 401);
         }
     }
-
-
 
     public function me(Request $request){
 
         return response()->json([
             'user' => $request->user,
             'status'=>200,
-
         ],200);
 
     }

@@ -33,4 +33,27 @@
 ### 3.点击home 页面的 profile 接口来获取用户信息
 *  通过 ajax get 请求 GET {BASE_URL}/auth/v1/me  携带 bearerToken 通过jwt 解析用户信息
  
+ 
+ ## 4.主要修改的代码目录结构
+ ```
+ 
+ ├── app                         
+ │   ├── Http                   
+ │   │   ├── Controller                     控制器目录
+ │   │      ├── HomeController              home 控制器 登录之后跳转的 日志目录
+ │   │      ├── JwtController               jwt  控制器
+ │   │      ├── LoginController             login 控制器
+ │   │   ├── Middieware                     中间件目录
+ │   │      ├── CheckJwtMiddleware.php         
+ │   │      ├── JwtMiddleware.php              
+ │   │   ├── Requests                       请求 rule 过滤
+ │   │      ├── LoginRequest.php         
+ │   ├── Services                   
+ │   │   ├── JWTService.php                 jwt 相关 加密 解密 
+ │   │   ├── UserService.php                登录用户的账号密码 写死在这个文件里 （ps ：没涉及到mysql）
+ ├── routes                                 路由目录
+ │   ├── web.php                            所有路由
+
+ ```
+
 
