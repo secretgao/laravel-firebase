@@ -45,7 +45,7 @@ class JwtController extends Controller
     public function me(Request $request){
 
         return response()->json([
-            'user' => $request->user,
+            'user' => $request->user, //拿到从中间件 获取的用户信息
             'status'=>200,
         ],200);
 

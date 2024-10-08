@@ -40,7 +40,7 @@
  ├── app                         
  │   ├── Http                   
  │   │   ├── Controller                     控制器目录
- │   │      ├── HomeController              home 控制器 登录之后跳转的 日志目录
+ │   │      ├── HomeController              home 控制器 登录之后跳转的
  │   │      ├── JwtController               jwt  控制器
  │   │      ├── LoginController             login 控制器
  │   │   ├── Middieware                     中间件目录

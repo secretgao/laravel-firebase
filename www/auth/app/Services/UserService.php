@@ -16,6 +16,6 @@ class UserService {
         if (isset($this->users[$username]) && $this->users[$username] === $password) {
             return true;
         }
-            return false;
+        return false;
     }
 }
